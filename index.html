@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>JS 13</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+
+        function ricxvebi() {
+
+            var i = 0;
+
+            while (i <= 50) {
+
+                if (i % 2 == 0) {
+                    document.getElementById("ricxvebi").innerHTML += '<span style="color: rgb(10, 100, 10);"> ' + i + ' </span>';
+                } else if (i % 2 == 1) {
+                    document.getElementById("ricxvebi").innerHTML += '<span style="color:rgb(160, 30, 30);"> ' + i + ' </span>';
+                }
+                i++;
+            }
+        }
+
+    </script>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            background-color: rgb(180, 140, 140);
+        }
+
+        p,
+        #ricxvebi {
+            font-size: 23px;
+            font-weight: 600;
+            margin: 0;
+            text-align: center;
+            font-family: calibri;
+        }
+
+        #ricxvebi {
+            width: 60%;
+            line-height: 150%;
+            letter-spacing: 1px;
+        }
+
+        #gilaki {
+            width: 300px;
+            height: 60px;
+            border: 3px solid rgb(160, 120, 120);
+            background: rgb(230, 200, 200);
+            margin: 25px 0;
+            font-family: calibri;
+            color: rgb(140, 80, 80);
+            font-size: 20px;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p style="color: rgb(120, 0, 0);">დააკლიკეთ ღილაკს და ნახეთ რომელია კენტი და რომელი ლუწი რიცხვი</p>
+    <p style="color: rgb(0, 90, 0);">(კენტი რიცხვები წითელია, ლუწი - მწვანე)</p>
+
+    <button onclick="ricxvebi()" id="gilaki">დააკლიკე</button>
+
+    <span id="ricxvebi"></span>
+
+
+</body>
+
+</html>
